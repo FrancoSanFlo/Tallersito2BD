@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
 
+
+//hola franquito uwu
 namespace Taller2_BD
 {
     public partial class MenuPrincipal : Form
