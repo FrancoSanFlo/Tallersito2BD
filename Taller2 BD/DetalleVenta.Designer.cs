@@ -31,15 +31,15 @@ namespace Taller2_BD
         {
             this.button_volver = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox_codigoCliente = new System.Windows.Forms.ComboBox();
-            this.textBox_nombreCliente = new System.Windows.Forms.TextBox();
-            this.dataGridView_ventaConsultada = new System.Windows.Forms.DataGridView();
-            this.button_consultarVenta = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker_fechaVenta = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_consultarVenta = new System.Windows.Forms.Button();
+            this.dataGridView_ventaConsultada = new System.Windows.Forms.DataGridView();
+            this.textBox_nombreCliente = new System.Windows.Forms.TextBox();
+            this.comboBox_codigoCliente = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ventaConsultada)).BeginInit();
             this.SuspendLayout();
@@ -72,29 +72,47 @@ namespace Taller2_BD
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consultar venta";
             // 
-            // comboBox_codigoCliente
+            // dateTimePicker_fechaVenta
             // 
-            this.comboBox_codigoCliente.FormattingEnabled = true;
-            this.comboBox_codigoCliente.Location = new System.Drawing.Point(31, 226);
-            this.comboBox_codigoCliente.Name = "comboBox_codigoCliente";
-            this.comboBox_codigoCliente.Size = new System.Drawing.Size(89, 21);
-            this.comboBox_codigoCliente.TabIndex = 2;
-            this.comboBox_codigoCliente.SelectedIndexChanged += new System.EventHandler(this.comboBox_codigoCliente_SelectedIndexChanged);
+            this.dateTimePicker_fechaVenta.Location = new System.Drawing.Point(31, 108);
+            this.dateTimePicker_fechaVenta.Name = "dateTimePicker_fechaVenta";
+            this.dateTimePicker_fechaVenta.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_fechaVenta.TabIndex = 10;
             // 
-            // textBox_nombreCliente
+            // label4
             // 
-            this.textBox_nombreCliente.Location = new System.Drawing.Point(31, 162);
-            this.textBox_nombreCliente.Name = "textBox_nombreCliente";
-            this.textBox_nombreCliente.Size = new System.Drawing.Size(151, 20);
-            this.textBox_nombreCliente.TabIndex = 3;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(31, 207);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Código cliente";
             // 
-            // dataGridView_ventaConsultada
+            // label3
             // 
-            this.dataGridView_ventaConsultada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_ventaConsultada.Location = new System.Drawing.Point(247, 19);
-            this.dataGridView_ventaConsultada.Name = "dataGridView_ventaConsultada";
-            this.dataGridView_ventaConsultada.Size = new System.Drawing.Size(512, 337);
-            this.dataGridView_ventaConsultada.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(28, 210);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(28, 146);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Nombre cliente";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Fecha";
             // 
             // button_consultarVenta
             // 
@@ -106,47 +124,29 @@ namespace Taller2_BD
             this.button_consultarVenta.UseVisualStyleBackColor = true;
             this.button_consultarVenta.Click += new System.EventHandler(this.button_consultarVenta_Click);
             // 
-            // label1
+            // dataGridView_ventaConsultada
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Fecha";
+            this.dataGridView_ventaConsultada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_ventaConsultada.Location = new System.Drawing.Point(247, 19);
+            this.dataGridView_ventaConsultada.Name = "dataGridView_ventaConsultada";
+            this.dataGridView_ventaConsultada.Size = new System.Drawing.Size(512, 337);
+            this.dataGridView_ventaConsultada.TabIndex = 4;
             // 
-            // label2
+            // textBox_nombreCliente
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 146);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Nombre cliente";
+            this.textBox_nombreCliente.Location = new System.Drawing.Point(31, 162);
+            this.textBox_nombreCliente.Name = "textBox_nombreCliente";
+            this.textBox_nombreCliente.Size = new System.Drawing.Size(151, 20);
+            this.textBox_nombreCliente.TabIndex = 3;
             // 
-            // label3
+            // comboBox_codigoCliente
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 210);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
-            this.label3.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 207);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Código cliente";
-            // 
-            // dateTimePicker_fechaVenta
-            // 
-            this.dateTimePicker_fechaVenta.Location = new System.Drawing.Point(31, 108);
-            this.dateTimePicker_fechaVenta.Name = "dateTimePicker_fechaVenta";
-            this.dateTimePicker_fechaVenta.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker_fechaVenta.TabIndex = 10;
+            this.comboBox_codigoCliente.FormattingEnabled = true;
+            this.comboBox_codigoCliente.Location = new System.Drawing.Point(31, 226);
+            this.comboBox_codigoCliente.Name = "comboBox_codigoCliente";
+            this.comboBox_codigoCliente.Size = new System.Drawing.Size(89, 21);
+            this.comboBox_codigoCliente.TabIndex = 2;
+            this.comboBox_codigoCliente.SelectedIndexChanged += new System.EventHandler(this.comboBox_codigoCliente_SelectedIndexChanged);
             // 
             // DetalleVenta
             // 
