@@ -148,6 +148,7 @@ namespace Taller2_BD
             this.button_detalleVenta.TabIndex = 3;
             this.button_detalleVenta.Text = "Detalle de venta";
             this.button_detalleVenta.UseVisualStyleBackColor = true;
+            this.button_detalleVenta.Click += new System.EventHandler(this.button_detalleVenta_Click);
             // 
             // button_nuevaVenta
             // 

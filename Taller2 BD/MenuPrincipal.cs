@@ -23,6 +23,7 @@ namespace Taller2_BD
         public static bool control_admin = false;
         public static bool control_ingresoSitio = false;
         public static bool control_ingresoVenta = false;
+        public static bool control_detalleVenta = false;
 
         public MenuPrincipal()
         {
@@ -137,6 +138,29 @@ namespace Taller2_BD
                 this.SendToBack();
             }
 
+        }
+
+        private void button_detalleVenta_Click(object sender, EventArgs e)
+        {
+            if (!control_detalleVenta)
+            {
+                try
+                {
+                    DetalleVenta detallarVenta = new DetalleVenta();
+                    control_detalleVenta = true;
+                    detallarVenta.ControlBox = false;
+                    detallarVenta.Show();
+
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.Message);
+                }
+            }
+            else
+            {
+                this.SendToBack();
+            }
         }
     }
 }
