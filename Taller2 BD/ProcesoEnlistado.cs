@@ -21,6 +21,8 @@ namespace Taller2_BD
         {
             
             InitializeComponent();
+
+
         }
 
         /*
@@ -86,8 +88,9 @@ namespace Taller2_BD
 
         private void linkLabel_haciaMenu_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            MenuPrincipal.control_ingresoSitio = false;
+            this.Close();
 
-            
         }
     }
 }

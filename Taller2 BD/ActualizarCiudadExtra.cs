@@ -104,5 +104,10 @@ namespace Taller2_BD
         {
             rellenar();
         }
+
+        private void ActualizarCiudadExtra_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -22,6 +22,7 @@ namespace Taller2_BD
         // VARIABLES DE CONTROL DE VENTANAS
         public static bool control_admin = false;
         public static bool control_ingresoSitio = false;
+        public static bool control_ingresoVenta = false;
 
         public MenuPrincipal()
         {
@@ -112,6 +113,30 @@ namespace Taller2_BD
         {
             AumentarStock aumentoStock = new AumentarStock();
             aumentoStock.Show();
+        }
+
+        private void button_nuevaVenta_Click(object sender, EventArgs e)
+        {
+            if (!control_ingresoVenta)
+            {
+                try
+                {
+                    IngresarVenta ingresarVenta = new IngresarVenta();
+                    control_ingresoVenta = true;
+                    ingresarVenta.ControlBox = false;
+                    ingresarVenta.Show();
+
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.Message);
+                }
+            }
+            else
+            {
+                this.SendToBack();
+            }
+
         }
     }
 }

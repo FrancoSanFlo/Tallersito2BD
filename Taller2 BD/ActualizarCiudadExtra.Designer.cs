@@ -93,6 +93,7 @@ namespace Taller2_BD
             this.Controls.Add(this.button_actualizar);
             this.Name = "ActualizarCiudadExtra";
             this.Text = "ActualizarCiudadExtra";
+            this.Load += new System.EventHandler(this.ActualizarCiudadExtra_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
