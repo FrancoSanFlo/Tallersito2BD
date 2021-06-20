@@ -9,14 +9,23 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
 
+/*
+ * Formulario de interacción para obtener listas 
+*/
+
 namespace Taller2_BD
 {
     public partial class ProcesoEnlistado : Form
     {
         public ProcesoEnlistado()
         {
+            
             InitializeComponent();
         }
+
+        /*
+         * Botón que permite visualizar el listado de los clientes nacionales, los cuales están habilitados
+         */
 
         private void button_listaNacional_Click(object sender, EventArgs e)
         {
@@ -30,6 +39,10 @@ namespace Taller2_BD
             conex.close();
         }
 
+        /*
+         * Botón que permite visualizar el listado de los clientes extranjeros, los cuales están habilitados
+         */
+
         private void button_listaExtranjero_Click(object sender, EventArgs e)
         {
             ConexMySQL conex = new ConexMySQL();
@@ -40,6 +53,10 @@ namespace Taller2_BD
             datosListas.DataSource = tabla;
             conex.close();
         }
+
+        /*
+         * Botón que permite visualizar el listado de todos los clientes, sean extranjeros o nacionales(habilitados)
+         */
 
         private void button_listaGralClientes_Click(object sender, EventArgs e)
         {
@@ -52,6 +69,10 @@ namespace Taller2_BD
             conex.close();
         }
 
+        /*
+         * Botón que permite visualizar el listado de los productos habilitados
+         */
+
         private void button_listaProdAct_Click(object sender, EventArgs e)
         {
             ConexMySQL conex = new ConexMySQL();
@@ -61,6 +82,12 @@ namespace Taller2_BD
             DataTable tabla = conex.selectQuery(consulta);
             datosListas.DataSource = tabla;
             conex.close();
+        }
+
+        private void linkLabel_haciaMenu_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            
         }
     }
 }

@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
-
+/*
+ *  Formulario para aumentar el stock de un producto
+*/
 namespace Taller2_BD
 {
     public partial class AumentarStock : Form
@@ -24,6 +26,11 @@ namespace Taller2_BD
         {
 
         }
+
+        /*
+         *  Método que actualiza y rellena el un combo box con los nombres de un producto
+         */
+
         private void rellenar()
         {
             comboBox_nomProdAumento.Items.Clear();
@@ -47,6 +54,10 @@ namespace Taller2_BD
             }
         }
 
+        /*
+         *  Botón que hace efectivo el aumentado de stock de un producto
+         *  AUMENTAR STOCK = STOCK ACTUAL + STOCK INGRESADO POR EL CLIENTE
+         */
 
         private void button_resfrescarDatos_Click(object sender, EventArgs e)
         {
@@ -59,11 +70,20 @@ namespace Taller2_BD
             conex.close();
         }
 
+        /*
+         *  Método que hace llamado al método de rellenado del combo box, en el cual 
+         *  están alojadas los nombres de los productos
+         */
+
         private void comboBox_nomProdAumento_DropDown(object sender, EventArgs e)
         {
             rellenar();
         }
 
+        /*
+         *  Check box que permite confirmar si el nombre es correcto y rellena text box
+         *  con el stock actual del producto seleccionado en combo box 
+         */
 
         private void checkBox_confirmarNombre_CheckedChanged(object sender, EventArgs e)
         {
@@ -74,6 +94,10 @@ namespace Taller2_BD
             textBox_stockActual.Text = completada;
             conex.close();
         }
+
+        /*
+         * Botón que hace efectivo el aumento de stock de un producto
+         */
 
         private void button_ingresoStock_Click(object sender, EventArgs e)
         {

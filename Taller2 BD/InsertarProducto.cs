@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
 
+/*
+ * Formulario que permite insertar un producto
+ */
 namespace Taller2_BD
 {
     public partial class InsertarProducto : Form
@@ -18,6 +21,9 @@ namespace Taller2_BD
             InitializeComponent();
         }
 
+        /*
+         * Botón que hace efectivo el insertar datos de un producto
+         */
         private void insercionDatos_Click(object sender, EventArgs e)
         {
             int stockProducto = int.Parse(textBox_stock.Text);
@@ -57,15 +63,14 @@ namespace Taller2_BD
            
         }
 
+        
+
         private void InsertarProducto_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         
     }

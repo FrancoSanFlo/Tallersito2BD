@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
 
+/*
+ * Formulario para eliminar un cliente sea extranjero o nacional
+*/
+
 namespace Taller2_BD
 {
     public partial class EliminarCliente : Form
@@ -17,6 +21,11 @@ namespace Taller2_BD
         {
             InitializeComponent();
         }
+
+        /*
+         *  Método que actualiza y rellena un combo box con el nombre 
+         *  de un cliente nacional
+         */
 
         private void rellenarNacional()
         {
@@ -40,6 +49,11 @@ namespace Taller2_BD
             }
         }
 
+        /*
+         *  Método que actualiza y rellena un combo box con el nombre 
+         *  de un cliente extranjero
+         */
+
         private void rellenarExtranjero()
         {
             comboBox_clienteExtranjero.Items.Clear();
@@ -62,6 +76,10 @@ namespace Taller2_BD
                 MessageBox.Show(error.Message);
             }
         }
+
+        /*
+         * Botón que hace efectivo el eliminado de un cliente extranjero
+         */
 
         private void button_clienteExtranjero_Click(object sender, EventArgs e)
         {
@@ -109,6 +127,10 @@ namespace Taller2_BD
             }
         }
 
+        /*
+         * Botón que hace efectivo el eliminado de un cliente nacional
+         */
+
         private void button_clienteNacional_Click(object sender, EventArgs e)
         {
             if (comboBox_clienteNacional.Text == "")
@@ -155,10 +177,20 @@ namespace Taller2_BD
             }
         }
 
+        /*
+         *  Método que hace llamado al método de rellenado del combo box, en el cual 
+         *  están alojadas los nombres de los clientes extranjeros
+         */
+
         private void comboBox_clienteExtranjero_DropDown(object sender, EventArgs e)
         {
             rellenarExtranjero();
         }
+
+        /*
+        *  Método que hace llamado al método de rellenado del combo box, en el cual 
+        *  están alojadas los nombres de los clientes nacionales
+        */
 
         private void comboBox_clienteNacional_DropDown(object sender, EventArgs e)
         {

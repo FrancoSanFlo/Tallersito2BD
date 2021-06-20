@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
 
+/*
+ *  Formulario de actualizado de ciudad de un cliente extranjero
+*/
+
 namespace Taller2_BD
 {
     public partial class ActualizarCiudadExtra : Form
@@ -17,6 +21,10 @@ namespace Taller2_BD
         {
             InitializeComponent();
         }
+
+        /*
+         * Método que permite actualizar y rellenar un combo box con 
+         */
 
         private void rellenar()
         {
@@ -39,6 +47,10 @@ namespace Taller2_BD
                 MessageBox.Show(error.Message);
             }
         }
+
+        /*
+         *  Botón que hace la función de actualizar la ciudad de un cliente extranjero
+         */
 
         private void button_actualizar_Click(object sender, EventArgs e)
         {
@@ -82,6 +94,11 @@ namespace Taller2_BD
                    
             }
         }
+
+        /*
+         *  Método que hace llamado al método de rellenado del combo box, en el cual 
+         *  están alojadas los nombres de clientes extranjeros
+         */
 
         private void comboBox_ciudades_DropDown(object sender, EventArgs e)
         {

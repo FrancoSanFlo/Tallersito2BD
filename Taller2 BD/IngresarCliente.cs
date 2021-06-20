@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
 
+/*
+ *  Formulario que permite ingresar un cliente, sea nacional o extranjero
+ */
+
 namespace Taller2_BD
 {
     public partial class IngresarCliente : Form
@@ -17,6 +21,10 @@ namespace Taller2_BD
         {
             InitializeComponent();
         }
+
+        /*
+         * Botón que hace efectivo el ingreso de un cliente nacional
+         */
 
         private void button_ingresarNacional_Click(object sender, EventArgs e)
         {
@@ -56,8 +64,13 @@ namespace Taller2_BD
             }
         }
 
+        /*
+         *  Botón que hace efectivo el ingreso de un cliente extranjero
+        */
+
         private void button_ingresarExtranjero_Click(object sender, EventArgs e)
         {
+           
             int codigo = int.Parse(textBox_codigoClienteExtra.Text);
 
 

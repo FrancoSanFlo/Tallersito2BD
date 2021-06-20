@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
 
+/*
+ *  Formulario de actualizado de precio de un producto
+ */
+
 namespace Taller2_BD
 {
     public partial class ActualizarPrecio : Form
@@ -17,6 +21,11 @@ namespace Taller2_BD
         {
             InitializeComponent();
         }
+
+        /*
+         *  Método que actualiza y rellena el combo box con los 
+         *  nombres de un producto
+        */
 
         private void rellenar()
         {
@@ -39,6 +48,10 @@ namespace Taller2_BD
                 MessageBox.Show(error.Message);
             }
         }
+
+        /*
+         * Botón que hace la función de actualizar el precio de un producto habilitado
+        */
 
         private void button_actualizarPrecio_Click(object sender, EventArgs e)
         {
@@ -86,6 +99,11 @@ namespace Taller2_BD
             }
         }
 
+        /*
+         *  Método que hace llamado al método de rellenado del combo box, en el cual 
+         *  están alojadas los nombres de los productos
+         */
+        
         private void comboBox_actualizarPrecio_DropDown(object sender, EventArgs e)
         {
             rellenar();

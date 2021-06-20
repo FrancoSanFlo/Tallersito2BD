@@ -132,6 +132,12 @@
     <Compile Include="IngresarCliente.Designer.cs">
       <DependentUpon>IngresarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogInAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInAdmin.Designer.cs">
+      <DependentUpon>LogInAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InsertarProducto.resx">
       <DependentUpon>InsertarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInAdmin.resx">
+      <DependentUpon>LogInAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

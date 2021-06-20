@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
 
+/*
+ * Formulario para eliminar un producto
+ */
+
 namespace Taller2_BD
 {
     public partial class EliminarProducto : Form
@@ -17,6 +21,10 @@ namespace Taller2_BD
         {
             InitializeComponent();
         }
+
+        /*
+         * Método que actualiza y rellena un combo box con los nombres de un producto
+        */
 
         private void rellenar()
         {
@@ -39,6 +47,10 @@ namespace Taller2_BD
                 MessageBox.Show(error.Message);
             }
         }
+
+        /*
+         * Botón que hace efectivo el eliminado de un producto
+        */
 
         private void button_eliminarProducto_Click(object sender, EventArgs e)
         {
@@ -89,6 +101,11 @@ namespace Taller2_BD
         {
 
         }
+
+        /*
+        *  Método que hace llamado al método de rellenado del combo box, en el cual 
+        *  están alojadas los nombres de los productos
+        */
 
         private void comboBox_eliminar_DropDown(object sender, EventArgs e)
         {
